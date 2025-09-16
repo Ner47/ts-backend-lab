@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "description": "��#\u0000 \u0000T\u0000S\u0000 \u0000B\u0000a\u0000c\u0000k\u0000e\u0000n\u0000d\u0000 \u0000L\u0000a\u0000b\u0000 \u0000\\\u0000n\u0000 \u0000&\u00045\u0004;\u0004L\u0004:\u0000 \u0000C\u0004G\u00045\u00041\u0004=\u0004K\u00049\u0004 \u0000T\u0000S\u0000-\u0000?\u0004@\u0004>\u00045\u0004:\u0004B\u0004 \u00004\u0004;\u0004O\u0004 \u0000>\u0004B\u0004@\u00040\u00041\u0004>\u0004:\u00048\u0004 \u00001\u0004M\u0004:\u00045\u0004=\u00044\u0004-\u0000A\u0004:\u00048\u0004;\u0004;\u0004>\u00042\u0004.\u0000\r\u0000 \u0000",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node --import tsx ./src/index.ts",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check"
   },
   "repository": {
     "type": "git",
@@ -16,5 +21,17 @@
   "bugs": {
     "url": "https://github.com/Ner47/ts-backend-lab/issues"
   },
-  "homepage": "https://github.com/Ner47/ts-backend-lab#readme"
+  "homepage": "https://github.com/Ner47/ts-backend-lab#readme",
+  "devDependencies": {
+    "@types/node": "^24.5.0",
+    "@typescript-eslint/eslint-plugin": "^8.44.0",
+    "@typescript-eslint/parser": "^8.44.0",
+    "eslint": "^9.35.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^16.4.0",
+    "prettier": "^3.6.2",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.44.0"
+  }
 }
