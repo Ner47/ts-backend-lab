@@ -7,10 +7,10 @@
     "noUncheckedIndexedAccess": true,
     "skipLibCheck": true,
     "outDir": "dist",
-    "types": ["node"],
+    "types": ["jest", "node"],
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true
   },
-  "include": ["src"]
+  "include": ["src", "tests", "**/*.ts"]
 }
